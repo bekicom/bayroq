@@ -11,6 +11,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <style>
+        
       /* Your existing styles remain unchanged */
 
       /* Additional styling for the timer */
@@ -86,6 +87,98 @@
       .option-button:hover {
         background-color: #2980b9;
       }
+      /* Additional styling for small screens */
+@media (max-width: 1440px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Adjust the font size for the timer on small screens */
+  #timer {
+    font-size: 22px;
+  }
+
+  /* Adjust the font size for the header on small screens */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Adjust the font size for the options buttons on small screens */
+  .option-button {
+    font-size: 18px;
+  }
+}
+
+/* Additional styling for even smaller screens */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Adjust the font size for the timer on even smaller screens */
+  #timer {
+    font-size: 20px;
+  }
+
+  /* Adjust the font size for the header on even smaller screens */
+  h1 {
+    font-size: 22px;
+  }
+
+  /* Adjust the font size for the options buttons on even smaller screens */
+  .option-button {
+    font-size: 16px;
+  }
+}
+
+/* Additional styling for very small screens */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Adjust the font size for the timer on very small screens */
+  #timer {
+    font-size: 18px;
+  }
+
+  /* Adjust the font size for the header on very small screens */
+  h1 {
+    font-size: 20px;
+  }
+
+  /* Adjust the font size for the options buttons on very small screens */
+  .option-button {
+    font-size: 14px;
+  }
+}
+
+/* Additional styling for extra small screens */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* Adjust the font size for the timer on extra small screens */
+  #timer {
+    font-size: 16px;
+  }
+
+  /* Adjust the font size for the header on extra small screens */
+  h1 {
+    font-size: 18px;
+  }
+
+  /* Adjust the font size for the options buttons on extra small screens */
+  .option-button {
+    font-size: 12px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -113,10 +206,10 @@
       <p>Tog'ri javoblar: <span id="modal-correctCount">0</span></p>
       <p>Xato javoblar: <span id="modal-incorrectCount">0</span></p>
       <div class="action-buttons">
-        <button onclick="continueGame()" class="btn btn-primary">
+        <button style="margin: 5px;" onclick="continueGame()" class="btn btn-primary">
           Davom ettirish
         </button>
-        <button onclick="resetGame()" class="btn btn-secondary">
+        <button style="margin: 5px;" onclick="resetGame()" class="btn btn-secondary">
           Qayta boshlash
         </button>
       </div>
